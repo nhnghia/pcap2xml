@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project fr.lri.pass.pcap2xml">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="/Users/nhnghia/these/workshop/SIPP/SipParserLim.1.0.1.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="PCapPaser2File"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="/Users/nhnghia/these/code/java/fr.lri.pass.pcap2xml/bin"/>
+            <fileset dir="/Users/nhnghia/these/code/java/sjpcap/bin"/>
+            <fileset dir="/Users/nhnghia/these/code/java/20120620-tools/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/nhnghia/soft/eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/nhnghia/soft/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/nhnghia/these/code/java/fr.lri.pass.pcap2xml/lib/jain-sip-ri-1.2.1111.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/nhnghia/these/code/java/fr.lri.pass.pcap2xml/lib/jain-sip-api-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/nhnghia/these/code/java/fr.lri.pass.pcap2xml/lib/jain-sdp-1.0.1111.jar"/>
+        </jar>
+    </target>
+</project>
